@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: youtube-story-video-agent
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: EURON_API_KEY
+        sync: false   # 👈 will be set securely in Render dashboard

@@ -1,0 +1,9 @@
+requests
+python-dotenv
+moviepy
+pydub
+google-api-python-client
+google-auth
+google-auth-oauthlib
+streamlit
+Pillow==9.5.0
